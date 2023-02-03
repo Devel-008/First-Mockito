@@ -1,8 +1,5 @@
 package com.book.dummy;
 
-import com.book.fake.Book;
-import com.book.fake.BookRepository;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
