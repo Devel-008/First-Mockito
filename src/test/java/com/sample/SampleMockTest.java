@@ -13,20 +13,15 @@ import static org.mockito.Mockito.when;
 import static org.testng.Assert.*;
 
 public class SampleMockTest {
-    SampleMock sampleMock;
-    @Test
-    public void mockTest(){
-  sampleMock = new SampleMock();
-  sampleMock.getMocking();
-    }
+    SampleMock sampleMock = new SampleMock();
+
     @Test
     public void mocker(){
         ArtifactInfo info = new ArtifactInfo("hello");
         ArtifactService service = new ArtifactService();
         service.getArtifactInfo("1","v","y","u");
-        sampleMock.getArtifactConfiguration("1","v","y","u");
         sampleMock.getInquiries("1","v","y","u","oo");
-
+        sampleMock.getArtifactConfiguration("1","v","y","u");
 
 
     }
